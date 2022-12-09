@@ -1,0 +1,47 @@
+.square {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: inline-block;
+}
+
+.red {
+  background: red;
+  left: 400px;
+}
+
+.blue {
+  background: blue;
+  right: 200px;
+}
+
+.yellow {
+  background: yellow;
+  right: 205px;
+}
+
+/* MI SOLUCION: OLVIDE COMPLETAMENTE EL DISPLAY
+
+.square {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.red {
+  background: red;
+  left: 400px;
+}
+
+.blue {
+  background: blue;
+  bottom: 200px;
+}
+
+.yellow {
+  background: yellow;
+  left: 200px;
+  bottom: 400px;
+}
+
+*/

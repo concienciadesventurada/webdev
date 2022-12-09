@@ -1,0 +1,114 @@
+body {
+  background-color: #F3EFE0;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  font-family: Roboto;
+}
+
+#pfp {
+  border-radius: 100%;
+}
+
+h1 {
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+}
+
+h2 {
+  margin: 50px auto 0 auto;
+  font-family: monospace;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h3 {
+  display: block;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+.top-container {
+  display: inline-block;
+  background-color: #434242;
+  height: 100vh;
+  width: 100vw;
+  border: 0 0 2px 0 solid;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.float-left {
+  width: 25%;
+  margin-right: 30px;
+  float: left;
+}
+
+.float-right {
+  width: 25%;
+  margin-right: 30px;
+  float: right;
+}
+
+/* ---------------------  SOFT SKILLS ---------------- */
+
+.soft-skills-container {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 24px;
+}
+
+.ss-icono {
+  width: 80px;
+  height: 80px;
+  padding-top: 18px;
+  padding-right: 18px;
+}
+
+/* ---------------------  FOOTER  ---------------- */
+
+.footer-container {
+  text-align: center;
+  background-color: gray;
+  padding-top: 124px;
+  padding-bottom: 100px;
+}
+
+.enlaces {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.icono-enlaces {
+  margin: 18px auto 24px auto;
+  width: 40px;
+  height: 40px;
+  padding-right: 18px;
+}
+
+/* ---------------------  DIVISIONES ---------------- */
+
+hr {
+  text-align: center;
+  margin: 0 auto 0 auto;
+  border-top: 7px dotted; 
+  border-right: none; 
+  border-bottom: none; 
+  border-left: none; 
+  width: 4%;
+  height: 5%;
+}
+
+/*
+#p-clear {
+  clear: left;
+}
+*/

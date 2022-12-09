@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Matias Martinez</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    
+    <!-- los tags visto hasta ahora son blocks, por lo que es necesario introducir inline elements, como los tags span, que me permiten modificar partes determinadas de un tag como en pro-gramador. No se usan todo el tiempo porque al SPAN no se le puede modificar su ancho [width], pero SI el la propiedad DISPLAY -->
+
+    <div class="square top">
+      <img src="images/cloud.png" alt="">
+      <h1>i'm matias</h1>
+      <p>a <span>pro</span>grammer</p>
+
+      <p>Como ejemplo de lo anterior, vease estos p-tag</p>
+      <p class="display-inline">Este p-tag tiene como clase display-inline porque se le asocio esta propiedad en el CSS.</p>
+      <p class="display-inline"> // Este es un p-tag que tambien tiene la clase de inline, pero aunque es aparte y deberia aparecer como un salto de linea, por tener la misma propiedad se renderizan juntos</p>
+      <br>
+      <span class="span-block">Y este es un span que, pese a ser inline, por lo que llegan su estilo llega hasta donde indique el texto (por lo general), este tiene la propiedad de ser un bloque, es decir, se comporta como un p-tag, extendiendose toda la pantalla.</span>
+      <span class="span-block">// Otro span-tag aparte, con la clase que lo hace bloque</span>
+      <br>
+      <p class="inline-block">Las imagenes funcionan, mas o menos, como inline-blocks, propiedad que acarrea este p-tag. En esta configuracion, puedo modificar su ancho [width] y seguir utilizandolo en la misma linea [inline]</p>
+      <p class="inline-block">// Por ejemplo, este segundo p-tag, mucho mas chico. Aparece en la misma linea</p>
+
+      <img src="images/cloud.png" alt="">
+      <img src="images/mountain.png" alt="">
+    </div>
+
+  </body>
+</html>

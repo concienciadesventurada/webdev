@@ -1,0 +1,29 @@
+/* 3 Boxes 200x200px
+ * BOX 1: 10px border, 20 px padding
+ * BOX 2: 20px border
+ * BOX 3: 10px border
+ * They must all be touching corners */
+
+.square {
+  height: 200px;
+  width: 200px;
+  border-style: solid;
+}
+
+.top {
+  padding: 20px;
+  border-width: 30px;
+  margin: 0;
+}
+
+.red {
+  background: red;
+  border-width: 20px;
+  margin-left: 300px;
+}
+
+.blue {
+  background: blue;
+  border-width: 10px;
+  margin-left: 540px;
+}

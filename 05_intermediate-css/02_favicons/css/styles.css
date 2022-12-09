@@ -1,0 +1,16 @@
+.top {
+  background-color: #faf7f0;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}

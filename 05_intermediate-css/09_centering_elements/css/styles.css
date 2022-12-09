@@ -1,0 +1,29 @@
+body {
+  margin: 45% auto;
+  text-align: center; /* Esta propiedad funciona centrando todo lo que NO
+                       tenga un width asignado. Si no, hay que arreglar el margen
+                       como se puede observar con el h1 con los auto*/
+  border: 0px;
+  background: #e4f9f5;
+}
+
+h1 {
+  margin: 0 auto;
+  /* width: 10%; */
+  font-family: Roboto, sans-serif; /* cssfontstack.com da fallbacks, este
+                                    es el de Roboto. Font embedding */
+  font-size: 5.625em;
+}
+
+h2, h3, p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.top {
+  left: 700px;
+  top: 370px;
+}
+
+.absolute {
+  position: absolute;
+}

@@ -1,0 +1,45 @@
+/* ######################### TAG SELECTION ####################### */
+body {
+  background-color: rgb(186, 73, 73);
+}
+
+h1 {
+  font-size: 200px;
+}
+
+img:hover {
+  background: red;
+  background: black;
+}
+
+/* ######################### ID SELECTION ####################### */
+
+/* It can only have ONE instance and the IDE/Editor will tell you it won't work */
+
+#heading {
+  font-style: italic;
+}
+
+#p-bacon {
+  font-size: 30px;
+  color: white;
+}
+
+
+/* ######################### CLASS SELECTION ####################### */
+
+/* It can only have ONE instance and the IDE/Editor will tell you it won't work */
+
+.p-bold {
+  font-weight: 200;
+}
+
+.green {
+  background: white;
+}
+
+.circular {
+  border-radius: 100%;
+}
+
+
