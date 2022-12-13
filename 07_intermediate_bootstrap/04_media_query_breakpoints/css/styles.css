@@ -36,6 +36,17 @@ h1 {
   margin: 25px 10px auto 0;
 }
 
+@media (max-width: 1028px) {
+
+  h1 {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+}
+
 .title-image {
   margin-left: 25%;
   width: 50%;
@@ -119,4 +130,14 @@ h2 {
 
 .pricing-col {
   padding: 3% 2%;
+}
+
+/* CTA */
+
+#cta {
+  text-align: center;
+  background-color: #ff4c68;
+  position: relative;
+  padding: 100px 100px;
+  content: center;
 }
