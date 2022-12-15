@@ -1,0 +1,19 @@
+body {
+  background-color: red;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+#div {
+  display: block;
+}
+
+.btn {
+  background-color: cyan;
+}
+
+.margin-50 {
+  margin: 50px;
+}

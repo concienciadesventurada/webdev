@@ -1,0 +1,24 @@
+body {
+  background-color: #FCFFE7;
+}
+
+.btn {
+  width: 50%;
+  height: 100%;
+}
+
+.btn-grn {
+  background-color: green;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-yel {
+  background-color: yellow;
+}
+
+.btn-blu {
+  background-color: blue;
+}
