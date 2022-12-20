@@ -1,8 +1,33 @@
+// ===== OBJETO DE PARTIDA =====
+
 const Partida = {
-  enProgreso: true,
+  enProgreso: false,
   secuenciaSimonDice: [],
-  nivel: 1
+  secuenciaUsuario:  [],
+  nivel: 0
 };
+
+// ==== REPRODUCE SONIDOS =====
+
+function reproducirSonido(idBoton) {
+  var idSonido = idBoton.replace("#", "");
+  var audio = new Audio("sounds/" + idSonido + ".mp3")
+  audio.play();
+}
+
+// ==== ANIMA EL BOTON INTERACTUADO =====
+
+function animarBoton(idBoton) {
+  $(idBoton).addClass("pressed");
+  
+  setTimeout(() => {
+    $(idBoton).removeClass("pressed");
+  }, "100");
+  reproducirSonido(idBoton);
+};
+
+
+// ===== ANADE AL ARRAY DE SECUENCIA Y ANIMA EL BOTON AGREGADO ====
 
 function anadirASecuencia() {
   var numeroBoton = Math.floor(Math.random() * 4);
@@ -27,7 +52,9 @@ function anadirASecuencia() {
   }
 }
 
-function codigoBoton(idBoton) {
+// =====
+
+function valorBoton(idBoton) {
   switch (idBoton) {
     case "#green":
       return 0
@@ -40,55 +67,64 @@ function codigoBoton(idBoton) {
   }
 }
 
+function actualizarPartida() {
+  Partida.nivel++;
+  $("#estado-juego").text("Nivel " + Partida.nivel);
+}
+
 function compararInputConSecuencia(valorBoton) {
   var i = Partida.secuenciaSimonDice.length - 1;
 
-  console.log(Partida.secuenciaSimonDice[i]);
+  //console.log(Partida.secuenciaSimonDice[i]);
   
   if (valorBoton === Partida.secuenciaSimonDice[i]) {
     anadirASecuencia();
+    actualizarPartida();
   }
   else {
     Partida.enProgreso = false;
+    Partida.nivel = 0;
+    actualizarPartida();
+    Partida.secuenciaSimonDice = [];
   }
-}
 
-function animarBoton(boton) {
-  $(boton).addClass("pressed");
-  
-  setTimeout(() => {
-    $(boton).removeClass("pressed");
-  }, "100");
-};
+  console.log(valorBoton);
+}
 
 //
 // **** EVENTOS BOTONES ****
 //
 
-anadirASecuencia();
-compararInputConSecuencia(3);
-
-
 $("#green").on("click", function () {
   animarBoton("#green");
+  compararInputConSecuencia(valorBoton("#green"));
 });
 
 $("#red").on("click", function () {
   animarBoton("#red");
+  compararInputConSecuencia(valorBoton("#red"));
 });
 
 $("#yellow").on("click", function () {
   animarBoton("#yellow");
+  compararInputConSecuencia(valorBoton("#yellow"));
 });
 
 $("#blue").on("click", function () {
   animarBoton("#blue");
+  compararInputConSecuencia(valorBoton("#blue"));
 });
+
 
 // ======= LOOP DE JUEGO =======
 
-do {
-  
-  compararInputConSecuencia(anadirASecuencia());
+anadirASecuencia();
+compararInputConSecuencia(0);
+console.log(Partida.secuenciaSimonDice);
 
-} while (Partida.enProgreso = true);
+//do {
+  
+//  compararInputConSecuencia(anadirASecuencia());
+
+
+//} while (Partida.enProgreso = true);
