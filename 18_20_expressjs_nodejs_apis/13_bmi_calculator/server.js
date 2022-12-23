@@ -19,6 +19,15 @@ app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 
+app.get("/", function(req, res) {
+  var n1 = Number(req.body.n1);
+  var n2 = Number(req.body.n2);
+
+  var resultado = n1 * n2;
+
+  res.send("La multiplicacion es: " + resultado);
+});
+
 app.get("/calculadora_imc", function(req, res) {
   res.sendFile(__dirname + "/calculadora_imc.html");
 });
